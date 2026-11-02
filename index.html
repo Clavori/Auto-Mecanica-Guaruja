@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Robôs -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Auto Mecânica Guarujá | Oficina Mecânica em Jardim Guarujá, São Paulo</title>
+  <meta name="description" content="Auto Mecânica Guarujá: Oficina mecânica de confiança no Jardim Guarujá, São Paulo. Injeção eletrônica, freios, suspensão, motor e câmbio para carros nacionais e importados. Nota 4,9 no Google. Chame no WhatsApp!">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- ==========================================================================
+       BLOCO DE CONFIGURAÇÃO DO SITE - AUTO MECÂNICA GUARUJÁ
+       Edite os valores abaixo sempre que tiver novas informações confirmadas.
+       Se deixar o campo com "" (vazio), o site oculta o item automaticamente.
+       ========================================================================== -->
+  <script>
+    window.CONFIG_OFICINA = {
+      // 1. Horários de Atendimento (Deixe "" para ocultar a linha correspondente)
+      horarioSemana: "Segunda a Sexta: até as 18h",       // Ex: "08:00 às 18:00" ou "até as 18h"
+      intervaloAlmoco: "",                                // [PREENCHER] Ex: "12:00 às 13:00" (oculto se vazio)
+      horarioSabado: "",                                  // [PREENCHER] Ex: "08:00 às 12:00" ou "Fechado" (oculto se vazio)
+      
+      // 2. Localização & Acesso
+      pontoReferencia: "",                                // [PREENCHER] Dica para achar o nº 110 (oculto se vazio)
+      
+      // 3. Autoridade / YouTube
+      numeroInscritosYoutube: "+10k inscritos",           // Ex: "+10k inscritos" ou deixe "" para ocultar
+      
+      // 4. Cartões de Vídeos do YouTube (Sem iframe, abre direto no app/navegador)
+      // [PREENCHER URL DO VÍDEO 1]
+      video1: {
+        titulo: "Conheça os serviços e o padrão de trabalho da oficina",
+        url: "https://www.youtube.com/@automecanicaguaruja",
+        categoria: "Auto Mecânica Guarujá no YouTube"
+      },
+      // [PREENCHER URL DO VÍDEO 2]
+      video2: {
+        titulo: "Dicas de manutenção preventiva para o seu veículo",
+        url: "https://www.youtube.com/@automecanicaguaruja",
+        categoria: "Dicas Automotivas"
+      },
+
+      // 5. Pagamento / Cartão no FAQ
+      condicoesParcelamento: ""                           // [PREENCHER] Ex: "em até 10x no cartão" (oculto se vazio)
+    };
+  </script>
+
+  <!-- Dados Estruturados Schema.org (LocalBusiness / AutoRepair) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Auto Mecânica Guarujá",
+    "image": "logo.png",
+    "telephone": "+55 11 93921-3171",
+    "url": "https://www.instagram.com/auto_mecanica_guaruja",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Battista Malatesta, 110",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "05877-170",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.6738,
+      "longitude": -46.7584
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "53"
+    },
+    "sameAs": [
+      "https://www.instagram.com/auto_mecanica_guaruja",
+      "https://www.youtube.com/@automecanicaguaruja"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Reset & Variáveis de Design */
+    :root {
+      --bg-dark: #0c0c0e;
+      --bg-card: #161619;
+      --bg-card-hover: #1f1f23;
+      --text-main: #ffffff;
+      --text-muted: #a1a1aa;
+      --text-dark: #121214;
+      --accent-red: #d90429;
+      --accent-red-hover: #ef233c;
+      --accent-red-subtle: rgba(217, 4, 41, 0.14);
+      --whatsapp-green: #25d366;
+      --whatsapp-green-hover: #20bd5a;
+      --star-gold: #ffb703;
+      --border-color: #27272a;
+      --border-radius: 14px;
+      --max-width: 1100px;
+      --navbar-height: 76px;
+      --transition: all 0.25s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.55;
+      padding-top: var(--navbar-height);
+      padding-bottom: 95px; /* Espaço para botão flutuante */
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* BARRA DE NAVEGAÇÃO FIXA (NAVBAR) */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--navbar-height);
+      background-color: rgba(12, 12, 14, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Logo da barra com cerca de 54px de altura e cantos arredondados */
+    .navbar-logo {
+      height: 54px;
+      max-height: 54px;
+      width: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      background-color: #ffffff;
+      padding: 3px 6px;
+      display: block;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-navbar-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background-color: var(--whatsapp-green);
+      color: #ffffff;
+      padding: 0.55rem 1.15rem;
+      border-radius: 50px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      transition: var(--transition);
+      box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+      min-height: 42px;
+    }
+
+    .btn-navbar-whatsapp:hover, .btn-navbar-whatsapp:active {
+      background-color: var(--whatsapp-green-hover);
+      transform: translateY(-1px);
+    }
+
+    /* BOTÕES GERAIS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 1.1rem 2rem;
+      font-size: 1.08rem;
+      font-weight: 700;
+      border-radius: 50px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      width: 100%;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      min-height: 52px;
+    }
+
+    @media (min-width: 640px) {
+      .btn {
+        width: auto;
+      }
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp-green);
+      color: #ffffff;
+    }
+    .btn-whatsapp:hover, .btn-whatsapp:active {
+      background-color: var(--whatsapp-green-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-maps {
+      background-color: #ffffff;
+      color: var(--text-dark);
+      border: 1px solid #e4e4e7;
+    }
+    .btn-maps:hover {
+      background-color: #e4e4e7;
+      transform: translateY(-2px);
+    }
+
+    .badge-fill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1rem;
+      background: var(--accent-red-subtle);
+      color: #ff4d6d;
+      border: 1px solid rgba(217, 4, 41, 0.35);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 0.4rem;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title span {
+      color: var(--accent-red);
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 2.3rem;
+      font-size: 0.98rem;
+    }
+
+    section {
+      padding: 3.4rem 0;
+    }
+
+    /* 1. HERO COM IMAGEM 16:9 & DEGRADÊ */
+    header.hero-banner {
+      position: relative;
+      width: 100%;
+      min-height: 640px;
+      background-color: #140708;
+      /* Sobreposição escura na esquerda (texto legível) e bem mais leve na direita (dono e supercarro nítidos) */
+      background-image: 
+        linear-gradient(90deg, rgba(10, 10, 12, 0.88) 0%, rgba(10, 10, 12, 0.72) 48%, rgba(10, 10, 12, 0.28) 80%, rgba(10, 10, 12, 0.18) 100%),
+        linear-gradient(180deg, rgba(10, 10, 12, 0.15) 0%, rgba(10, 10, 12, 0.78) 100%),
+        url('hero-bg.jpg'),
+        url('hero-bg.png'),
+        radial-gradient(circle at 50% 20%, #3a080d 0%, #0c0c0e 80%);
+      background-size: cover;
+      background-position: right top;
+      background-repeat: no-repeat;
+      padding: 5.5rem 0 5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header.hero-banner {
+        min-height: 560px;
+        background-position: 75% top;
+        padding: 4.5rem 0 4rem;
+      }
+    }
+
+    .hero-content {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .hero-banner h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
+    }
+
+    @media (min-width: 768px) {
+      .hero-banner h1 {
+        font-size: 2.6rem;
+      }
+    }
+
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: #e4e4e7;
+      max-width: 600px;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.65rem;
+      width: 100%;
+    }
+
+    .cta-subtext {
+      font-size: 0.9rem;
+      color: #d4d4d8;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .online-dot {
+      width: 9px;
+      height: 9px;
+      background-color: var(--whatsapp-green);
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 10px var(--whatsapp-green);
+    }
+
+    /* 2. FAIXA DE CONFIANÇA */
+    .trust-strip {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1.4rem 0;
+    }
+
+    .trust-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.35rem 1.25rem;
+    }
+
+    .trust-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: #ffffff;
+    }
+
+    .stars {
+      color: var(--star-gold);
+      display: flex;
+      gap: 2px;
+    }
+
+    .trust-label {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* 3. SERVIÇOS (COM CARDS CENTRALIZADOS NA 2ª LINHA) */
+    .services-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.4rem;
+      margin-top: 1rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.7rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      width: 100%;
+      max-width: 340px;
+      flex: 1 1 300px;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent-red);
+      opacity: 0;
+      transition: var(--transition);
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    .service-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(217, 4, 41, 0.45);
+      transform: translateY(-3px);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(217, 4, 41, 0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--accent-red);
+    }
+
+    .service-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    .service-title {
+      font-size: 1.24rem;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+      color: #ffffff;
+    }
+
+    .service-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.35rem;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    .service-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--whatsapp-green);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .service-link:hover {
+      text-decoration: underline;
+    }
+
+    /* 4. COMO FUNCIONA */
+    .steps-section {
+      background-color: #111114;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    /* GALERIA DE MODELOS ATENDIDOS */
+    .models-section {
+      background-color: #0e0e11;
+      border-top: 1px solid var(--border-color);
+      padding: 3.5rem 0;
+    }
+
+    .models-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.15rem;
+    }
+
+    @media (min-width: 768px) {
+      .models-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .models-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .model-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+
+    .model-card:hover {
+      border-color: var(--accent-red);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(217, 4, 41, 0.25);
+    }
+
+    .model-img-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* Formato quadrado 1:1 */
+      background: #18181b;
+      overflow: hidden;
+    }
+
+    .model-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .model-card:hover .model-img {
+      transform: scale(1.06);
+    }
+
+    .model-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(12, 12, 14, 0.88);
+      backdrop-filter: blur(6px);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .model-info {
+      padding: 1rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: var(--bg-card);
+    }
+
+    .model-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.25rem;
+    }
+
+    .model-spec {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .steps-list {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+
+    .step-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.6rem;
+      flex: 1;
+    }
+
+    .step-number {
+      width: 38px;
+      height: 38px;
+      background: var(--accent-red);
+      color: #fff;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+    }
+
+    .step-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+
+    .step-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    /* 5. AVALIAÇÕES DO GOOGLE MAPS */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 960px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .review-card:hover {
+      border-color: #3f3f46;
+      transform: translateY(-2px);
+    }
+
+    .review-user-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .review-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #27272a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      border: 2px solid var(--accent-red);
+    }
+
+    .review-user-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-author {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #fff;
+    }
+
+    .review-badge {
+      font-size: 0.75rem;
+      color: #fbbf24;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .review-stars-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .review-body {
+      font-size: 0.92rem;
+      color: #e4e4e7;
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+    }
+
+    .review-source {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 0.75rem;
+    }
+
+    /* 6. VÍDEOS (SEM IFRAME - CARDS COM MINIATURA E PLAY DIRETO) */
+    .videos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .video-custom-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .video-custom-card:hover {
+      border-color: var(--accent-red);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-thumb-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #22080a 0%, #161619 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .video-thumb-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+      transition: transform 0.4s ease;
+    }
+
+    .video-custom-card:hover .video-thumb-bg {
+      transform: scale(1.05);
+      opacity: 0.7;
+    }
+
+    .video-play-btn {
+      width: 62px;
+      height: 62px;
+      background-color: var(--accent-red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      box-shadow: 0 4px 18px rgba(217, 4, 41, 0.5);
+      transition: transform 0.25s ease, background-color 0.25s ease;
+    }
+
+    .video-custom-card:hover .video-play-btn {
+      transform: scale(1.12);
+      background-color: var(--accent-red-hover);
+    }
+
+    .video-play-btn svg {
+      width: 26px;
+      height: 26px;
+      fill: #ffffff;
+      margin-left: 3px; /* Compensação ótica do triângulo */
+    }
+
+    .video-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      z-index: 2;
+    }
+
+    .video-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .video-card-category {
+      font-size: 0.8rem;
+      color: #ff4d6d;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .video-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    .video-card-action {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .video-custom-card:hover .video-card-action {
+      color: #ffffff;
+    }
+
+    /* 7. COMO CHEGAR */
+    .location-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 330px;
+      position: relative;
+      background: #27272a;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .location-details {
+      padding: 1.75rem;
+    }
+
+    .address-highlight {
+      font-size: 1.22rem;
+      font-weight: 800;
+      margin-bottom: 0.35rem;
+    }
+
+    .address-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .alert-box {
+      background: rgba(217, 4, 41, 0.08);
+      border-left: 4px solid var(--accent-red);
+      padding: 1.1rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .alert-box strong {
+      display: block;
+      color: #ff6b6b;
+      margin-bottom: 0.25rem;
+      font-size: 0.96rem;
+    }
+
+    .alert-box p {
+      font-size: 0.92rem;
+      color: #e4e4e7;
+      line-height: 1.45;
+    }
+
+    /* 8. HORÁRIO DE ATENDIMENTO */
+    .hours-card {
+      background: linear-gradient(145deg, #220e10 0%, #151518 100%);
+      border: 1px solid rgba(217, 4, 41, 0.35);
+      border-radius: var(--border-radius);
+      padding: 1.75rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .hours-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .hours-table {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 1.25rem;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hours-table td {
+      padding: 0.65rem 0.25rem;
+      text-align: left;
+    }
+
+    .hours-table td:last-child {
+      text-align: right;
+      font-weight: 600;
+    }
+
+    .off-hours-notice {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 0.9rem;
+      font-size: 0.92rem;
+      color: #f4f4f5;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* 9. FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 1.15rem 1.35rem;
+      text-align: left;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 1.02rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-icon {
+      font-size: 1.25rem;
+      transition: transform 0.2s ease;
+      color: var(--accent-red);
+      font-weight: 700;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 1.35rem 1.15rem;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* 10. RODAPÉ */
+    footer {
+      background: #09090b;
+      border-top: 1px solid var(--border-color);
+      padding: 3.2rem 0 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+    .footer-brand {
+      max-width: 360px;
+    }
+
+    .footer-logo-img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 4px 8px;
+    }
+
+    .footer-info {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.1rem;
+    }
+
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: var(--transition);
+    }
+
+    .social-btn:hover {
+      background: var(--accent-red);
+      border-color: var(--accent-red);
+      transform: translateY(-2px);
+    }
+
+    .social-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .copyright-area {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      font-size: 0.84rem;
+      color: #71717a;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .demo-credit {
+      font-size: 0.78rem;
+      color: #a1a1aa;
+      letter-spacing: 0.2px;
+    }
+
+    /* BOTÃO FLUTUANTE DE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background-color: var(--whatsapp-green);
+      color: white;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      background-color: var(--whatsapp-green-hover);
+      transform: scale(1.08);
+    }
+
+    .whatsapp-float svg {
+      width: 36px;
+      height: 36px;
+      fill: currentColor;
+    }
+
+    .whatsapp-pulse {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: var(--whatsapp-green);
+      opacity: 0.6;
+      animation: pulse-wave 2s infinite;
+      z-index: -1;
+    }
+
+    @keyframes pulse-wave {
+      0% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+      100% {
+        transform: scale(1.55);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGAÇÃO FIXA NO TOPO -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand" aria-label="Auto Mecânica Guarujá - Início">
+        <img src="logo.png" alt="Auto Mecânica Guarujá" class="navbar-logo">
+      </a>
+      <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+         class="btn-navbar-whatsapp" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="Chamar no WhatsApp">
+        <!-- Ícone Oficial do WhatsApp -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.214 8.214 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.31z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- 1. HERO BANNER COM IMAGEM DE FUNDO & SOBREPOSIÇÃO -->
+  <header class="hero-banner">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge-fill">OFICINA MECÂNICA ESPECIALIZADA</span>
+        <h1>Mecânica de confiança para carros nacionais e importados</h1>
+        <p class="hero-tagline">Diagnóstico preciso, transparência e respeito pelo seu veículo na Zona Sul de São Paulo.</p>
+
+        <div class="hero-cta">
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+             class="btn btn-whatsapp" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             aria-label="Chamar no WhatsApp">
+            <!-- Ícone Oficial WhatsApp -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.214 8.214 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.31z"/>
+            </svg>
+            Chamar no WhatsApp
+          </a>
+          <div class="cta-subtext">
+            Ou ligue: <a href="tel:+5511939213171" style="color: #ffffff; text-decoration: underline; margin-left: 3px;"><strong>(11) 93921-3171</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. FAIXA DE CONFIANÇA -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-rating">
+            <span>4,9</span>
+            <div class="stars" aria-label="Avaliação 4.9 estrelas de 5">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <div class="trust-label">53 avaliações no Google Maps</div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-rating" style="font-size: 1.18rem;">
+            Nacionais & Importados
+          </div>
+          <div class="trust-label">Diagnóstico com scanner e peças de qualidade</div>
+        </div>
+
+        <!-- Exibido dinamicamente via CONFIG_OFICINA -->
+        <div class="trust-item" id="trust-item-youtube" style="display: none;">
+          <div class="trust-rating" id="trust-val-youtube" style="font-size: 1.18rem;">
+            +10k inscritos
+          </div>
+          <div class="trust-label">Transparência e manutenção em vídeo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVIÇOS (COM ÍCONES ADEQUADOS E CENTRALIZADOS NA 2ª LINHA) -->
+  <section id="servicos">
+    <div class="container">
+      <h2 class="section-title">Nossos <span>Serviços</span></h2>
+      <p class="section-subtitle">Soluções completas com diagnóstico preciso para o seu veículo.</p>
+
+      <div class="services-flex">
+        <!-- Injeção Eletrônica: Ícone Bico Injetor -->
+        <div class="service-card">
+          <div class="service-icon" title="Injeção Eletrônica">
+            <svg viewBox="0 0 24 24">
+              <!-- Bico Injetor de Combustível com Spray -->
+              <path d="M11 2h2v3h-2zm-3 4h8v3h-1v5l-2 3v3h-2v-3l-2-3V9H8zm3 17h2v2h-2zm-4 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Injeção Eletrônica</h3>
+          <p class="service-desc">Diagnóstico computadorizado com scanner automotivo, limpeza e equalização de bicos injetores e testes de sensores.</p>
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="service-link" target="_blank" rel="noopener noreferrer">
+            Pedir orçamento deste serviço →
+          </a>
+        </div>
+
+        <!-- Freio: Ícone Disco de Freio com Pinça -->
+        <div class="service-card">
+          <div class="service-icon" title="Sistema de Freios">
+            <svg viewBox="0 0 24 24">
+              <!-- Disco de freio ventilado com pinça de freio -->
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-11a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm6-4.5c2.1 1.6 3.5 4.1 3.5 7s-1.4 5.4-3.5 7v-14z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Sistema de Freios</h3>
+          <p class="service-desc">Troca de pastilhas, discos, lonas, tambores, sangria eletrônica e substituição do fluido de freio com total segurança.</p>
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="service-link" target="_blank" rel="noopener noreferrer">
+            Pedir orçamento deste serviço →
+          </a>
+        </div>
+
+        <!-- Suspensão: Ícone Amortecedor com Mola -->
+        <div class="service-card">
+          <div class="service-icon" title="Suspensão">
+            <svg viewBox="0 0 24 24">
+              <!-- Amortecedor automotivo com mola helicoidal -->
+              <path d="M11 2h2v2.1c1.8.4 3 1.5 3 2.9 0 1.2-.9 2.2-2.2 2.7l3.2 2.3c.6.4 1 1.1 1 1.8 0 1.2-.9 2.2-2.2 2.7l2.2 1.6v2.9h-2v-1.6l-3-2.1c-.6-.4-1-1.1-1-1.8 0-1.2.9-2.2 2.2-2.7L10 10.5c-.6-.4-1-1.1-1-1.8 0-1.2.9-2.2 2.2-2.7V2zm1 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Suspensão</h3>
+          <p class="service-desc">Amortecedores, molas, buchas, pivôs, terminais de direção e bandejas. Elimine ruídos e recupere a estabilidade.</p>
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="service-link" target="_blank" rel="noopener noreferrer">
+            Pedir orçamento deste serviço →
+          </a>
+        </div>
+
+        <!-- Motor: Ícone Bloco / Pistão -->
+        <div class="service-card">
+          <div class="service-icon" title="Motor">
+            <svg viewBox="0 0 24 24">
+              <!-- Pistão automotivo com biela / bloco -->
+              <path d="M6 3h12v6H6zm1 2v2h10V5zm4 5h2v4h-2zm-1 5h4l2 6h-3v3h-2v-3H8l2-6z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Motor</h3>
+          <p class="service-desc">Troca de correia dentada, junta de cabeçote, bomba d'água, arrefecimento, descarbonização e revisões completas.</p>
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="service-link" target="_blank" rel="noopener noreferrer">
+            Pedir orçamento deste serviço →
+          </a>
+        </div>
+
+        <!-- Câmbio: Ícone Par de Engrenagens de Transmissão -->
+        <div class="service-card">
+          <div class="service-icon" title="Câmbio">
+            <svg viewBox="0 0 24 24">
+              <!-- Engrenagens de transmissão mecânica -->
+              <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Câmbio</h3>
+          <p class="service-desc">Troca do kit de embreagem, regulagem de trambulador, diagnóstico e verificação de fluidos de câmbio manual e automático.</p>
+          <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="service-link" target="_blank" rel="noopener noreferrer">
+            Pedir orçamento deste serviço →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CARROS QUE PASSARAM PELA OFICINA (PROVA REAL) -->
+  <section class="models-section" id="modelos">
+    <div class="container">
+      <h2 class="section-title">Carros que Passaram <span>pela Oficina</span></h2>
+      <p class="section-subtitle">Casos reais atendidos em nosso dia a dia. Diagnósticos precisos e manutenções concluídas com transparência para carros nacionais e importados.</p>
+
+      <div class="models-grid">
+        <!-- 1. Honda CR-V -->
+        <div class="model-card">
+          <div class="model-img-wrap">
+            <img src="carro-honda.jpg" alt="Honda CR-V na Auto Mecânica Guarujá" class="model-img" loading="lazy">
+            <span class="model-tag">Reparo de Motor</span>
+          </div>
+          <div class="model-info">
+            <h3 class="model-title">Honda CR-V</h3>
+            <span class="model-spec">Junta do cabeçote queimada por falta de água no radiador (reparo de motor e arrefecimento)</span>
+          </div>
+        </div>
+
+        <!-- 2. Jeep Compass -->
+        <div class="model-card">
+          <div class="model-img-wrap">
+            <img src="carro-jeep.jpg" alt="Jeep Compass na Auto Mecânica Guarujá" class="model-img" loading="lazy">
+            <span class="model-tag">Câmbio Automático</span>
+          </div>
+          <div class="model-info">
+            <h3 class="model-title">Jeep Compass</h3>
+            <span class="model-spec">Substituição do trocador de calor do câmbio e revisão do sistema de transmissão</span>
+          </div>
+        </div>
+
+        <!-- 3. BMW 320i 2015 -->
+        <div class="model-card">
+          <div class="model-img-wrap">
+            <img src="carro-bmw.jpg" alt="BMW 320i 2015 na Auto Mecânica Guarujá" class="model-img" loading="lazy">
+            <span class="model-tag">Sedan Premium Alemão</span>
+          </div>
+          <div class="model-info">
+            <h3 class="model-title">BMW 320i 2015</h3>
+            <span class="model-spec">Troca da homocinética traseira, instalação de válvula blow-off e troca de filtros</span>
+          </div>
+        </div>
+
+        <!-- 4. Chery Arrizo 6 -->
+        <div class="model-card">
+          <div class="model-img-wrap">
+            <img src="carro-chery.jpg" alt="Chery Arrizo 6 na Auto Mecânica Guarujá" class="model-img" loading="lazy">
+            <span class="model-tag">Arrefecimento & Turbo</span>
+          </div>
+          <div class="model-info">
+            <h3 class="model-title">Chery Arrizo 6</h3>
+            <span class="model-spec">Troca do radiador do intercooler e substituição da válvula termostática</span>
+          </div>
+        </div>
+
+        <!-- 5. Range Rover Evoque -->
+        <div class="model-card">
+          <div class="model-img-wrap">
+            <img src="carro-rangerover.jpg" alt="Range Rover Evoque na Auto Mecânica Guarujá" class="model-img" loading="lazy">
+            <span class="model-tag">Sincronismo de Motor</span>
+          </div>
+          <div class="model-info">
+            <h3 class="model-title">Range Rover Evoque 2.0 Turbo</h3>
+            <span class="model-spec">Correção do sincronismo do motor e calibração precisa de ponto</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.2rem;">
+        <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+           class="btn btn-whatsapp" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          Pedir Orçamento para o Meu Carro
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COMO FUNCIONA -->
+  <section class="steps-section">
+    <div class="container">
+      <h2 class="section-title">Como <span>Funciona</span></h2>
+      <p class="section-subtitle">Atendimento ágil e sem complicações em 3 passos:</p>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Chame no WhatsApp</h3>
+          <p class="step-text">Envie uma mensagem contando o que o carro está apresentando (ruído, luz acesa, revisão ou falha mecânica).</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Receba o Orçamento</h3>
+          <p class="step-text">Passamos uma prévia transparente de valores e orientamos a melhor conduta antes de iniciar qualquer reparo.</p>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Agende e Leve o Carro</h3>
+          <p class="step-text">Defina o melhor dia e horário para trazer seu carro até a nossa oficina na Rua Battista Malatesta, 110.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.2rem;">
+        <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+           class="btn btn-whatsapp" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          Pedir Orçamento sem Compromisso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. AVALIAÇÕES REAIS (NOME E INICIAL DO SOBRENOME) -->
+  <section id="avaliacoes">
+    <div class="container">
+      <h2 class="section-title">Avaliações do <span>Google Maps</span></h2>
+      <p class="section-subtitle">A opinião de quem já confia seu veículo aos nossos cuidados:</p>
+
+      <div class="reviews-grid">
+        <!-- Review 1: Patricia D. -->
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">PD</div>
+            <div class="review-user-meta">
+              <span class="review-author">Patricia D.</span>
+              <span class="review-badge">★ Local Guide · 13 avaliações</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            "Excelente, faz o que realmente está precisando, sem aumentar serviço desnecessário no seu carro, estão de PARABÉNS 👏"
+          </p>
+          <div class="review-source">
+            <span>Avaliação do Google Maps</span>
+          </div>
+        </div>
+
+        <!-- Review 2: Angelica R. -->
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">AR</div>
+            <div class="review-user-meta">
+              <span class="review-author">Angelica R.</span>
+              <span class="review-badge">★ Local Guide · 70 avaliações</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            "Excelência no atendimento. Bom preço e limpeza impecável. Há anos só levo o carro neste mecânico. Indico a todos."
+          </p>
+          <div class="review-source">
+            <span>Avaliação do Google Maps</span>
+          </div>
+        </div>
+
+        <!-- Review 3: Ricardo M. -->
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">RM</div>
+            <div class="review-user-meta">
+              <span class="review-author">Ricardo M.</span>
+              <span class="review-badge">Cliente da oficina há +10 anos</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            "Fui uns dos primeiros clientes da oficina, isso há mais de 10 anos, só levo meus carros lá, tenho confiança no serviço e sei que posso levar o carro há qualquer hora e sei que vou ser atendido."
+          </p>
+          <div class="review-source">
+            <span>Avaliação do Google Maps</span>
+          </div>
+        </div>
+
+        <!-- Review 4: Reginaldo O. -->
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">RO</div>
+            <div class="review-user-meta">
+              <span class="review-author">Reginaldo O.</span>
+              <span class="review-badge">5 avaliações</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            "Profissionais muito competentes, cobram preço justo e não ficam inventando defeito para arrancar dinheiro. Os carros da empresa que trabalho e o meu, são consertados somente nesta oficina."
+          </p>
+          <div class="review-source">
+            <span>Avaliação do Google Maps</span>
+          </div>
+        </div>
+
+        <!-- Review 5: Reginaldo M. -->
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">RM</div>
+            <div class="review-user-meta">
+              <span class="review-author">Reginaldo M.</span>
+              <span class="review-badge">★ Local Guide · 22 avaliações</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-body">
+            "Sobre a Mecânica Guarujá e os profissionais Sr Fernando, Léo e outros meninos, estão de parabéns, é um ótimo atendimento, não tenho que falar, cobra o preço justo e um trabalho de qualidade ainda mais a humildade..."
+          </p>
+          <div class="review-source">
+            <span>Avaliação do Google Maps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. VÍDEOS (SEM IFRAME - CARTOES COM MINIATURA E LINK DIRETO) -->
+  <section id="videos" style="background-color: #111114; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <h2 class="section-title">Vídeos da <span>Oficina</span></h2>
+      <p class="section-subtitle">Assista nossos vídeos de diagnóstico e manutenção diretamente no YouTube:</p>
+
+      <div class="videos-grid">
+        <!-- Cartão Vídeo 1 -->
+        <a id="video-link-1" href="https://www.youtube.com/@automecanicaguaruja" target="_blank" rel="noopener noreferrer" class="video-custom-card">
+          <div class="video-thumb-container">
+            <img src="hero-bg.png" alt="Vídeo Auto Mecânica Guarujá 1" class="video-thumb-bg" onerror="this.style.display='none'">
+            <div class="video-play-btn" aria-label="Assistir no YouTube">
+              <!-- Ícone Play -->
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <span class="video-badge">Assistir no YouTube</span>
+          </div>
+          <div class="video-card-body">
+            <span class="video-card-category" id="video-cat-1">Oficina na Prática</span>
+            <h3 class="video-card-title" id="video-title-1">Conheça os serviços e o padrão de trabalho da oficina</h3>
+            <span class="video-card-action">
+              Abrir no YouTube ↗
+            </span>
+          </div>
+        </a>
+
+        <!-- Cartão Vídeo 2 -->
+        <a id="video-link-2" href="https://www.youtube.com/@automecanicaguaruja" target="_blank" rel="noopener noreferrer" class="video-custom-card">
+          <div class="video-thumb-container">
+            <img src="Captura de tela 2026-11-02 132550.png" alt="Vídeo Auto Mecânica Guarujá 2" class="video-thumb-bg" onerror="this.style.display='none'">
+            <div class="video-play-btn" aria-label="Assistir no YouTube">
+              <!-- Ícone Play -->
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <span class="video-badge">Assistir no YouTube</span>
+          </div>
+          <div class="video-card-body">
+            <span class="video-card-category" id="video-cat-2">Dicas Automotivas</span>
+            <h3 class="video-card-title" id="video-title-2">Dicas de manutenção preventiva para o seu veículo</h3>
+            <span class="video-card-action">
+              Abrir no YouTube ↗
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://www.youtube.com/@automecanicaguaruja" class="btn btn-maps" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#ff0000">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          Visitar canal @automecanicaguaruja
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. COMO CHEGAR & 8. HORÁRIOS -->
+  <section id="localizacao">
+    <div class="container">
+      <h2 class="section-title">Onde <span>Estamos</span></h2>
+      <p class="section-subtitle">Localização fácil no Jardim Guarujá, São Paulo.</p>
+
+      <div class="location-wrapper">
+        <div class="map-container">
+          <iframe 
+            src="https://maps.google.com/maps?q=Rua+Battista+Malatesta,+110,+Jardim+Guaruja,+Sao+Paulo+-+SP,+05877-170&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            loading="lazy" 
+            title="Localização Auto Mecânica Guarujá"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="location-details">
+          <div class="address-highlight">Rua Battista Malatesta, 110</div>
+          <div class="address-sub">Jardim Guarujá, São Paulo - SP | CEP: 05877-170</div>
+
+          <!-- Aviso de Ladeira e Ponto de Referência Condicional -->
+          <div class="alert-box">
+            <strong>⚠️ Atenção ao Acesso:</strong>
+            <p id="alert-text-ladeira">A rua possui ladeira íngreme.</p>
+            <p id="alert-ponto-ref" style="display: none; margin-top: 0.35rem;"></p>
+          </div>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Battista+Malatesta,+110,+Jardim+Guarujá,+São+Paulo+-+SP,+05877-170" 
+             class="btn btn-maps" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.71 11.29l-9-9a.996.996 0 0 0-1.41 0l-9 9a.996.996 0 0 0 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9a.996.996 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+            </svg>
+            Abrir rota no Google Maps
+          </a>
+
+          <!-- 8. Horário de Atendimento Dinâmico -->
+          <div class="hours-card">
+            <h3 class="hours-title">🕒 Horário de Atendimento</h3>
+            <table class="hours-table">
+              <tr id="row-horario-semana">
+                <td>Segunda a Sexta:</td>
+                <td id="val-horario-semana">Até as 18h</td>
+              </tr>
+              <tr id="row-horario-almoco" style="display: none;">
+                <td>Intervalo de Almoço:</td>
+                <td id="val-horario-almoco"></td>
+              </tr>
+              <tr id="row-horario-sabado" style="display: none;">
+                <td>Sábado:</td>
+                <td id="val-horario-sabado"></td>
+              </tr>
+              <tr>
+                <td>Domingo e Feriados:</td>
+                <td>Fechado</td>
+              </tr>
+            </table>
+
+            <div class="off-hours-notice">
+              "Fora do horário? Mande mensagem que respondemos assim que possível."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">Perguntas <span>Frequentes</span></h2>
+      <p class="section-subtitle">Tire suas dúvidas antes de trazer seu carro para a oficina:</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Faz orçamento pelo WhatsApp?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Você pode nos enviar uma mensagem detalhando o que o veículo está apresentando. Passamos uma estimativa inicial de valores e os procedimentos necessários para o diagnóstico completo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Atende veículos importados?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Contamos com ferramentas, scanner e conhecimento especializado para manutenção preventiva e corretiva de veículos nacionais e importados de diversas marcas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Preciso agendar antes de levar o carro?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Recomendamos sempre enviar uma mensagem no WhatsApp com antecedência. Assim reservamos o espaço no box de atendimento e agilizamos a sua recepção.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Quais as formas de pagamento? Aceita cartão?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p id="faq-pagamento-text">Sim! Aceitamos cartões de crédito, débito e Pix.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Auto Mecânica Guarujá" class="footer-logo-img">
+          <p class="footer-info">
+            Oficina mecânica especializada em manutenção preventiva e corretiva para veículos nacionais e importados em São Paulo.
+          </p>
+          <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://instagram.com/auto_mecanica_guaruja" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@automecanicaguaruja" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+
+            <!-- Ícone Oficial do WhatsApp com Link Direto -->
+            <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+               class="social-btn" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="WhatsApp (11) 93921-3171">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.214 8.214 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.31z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <div style="font-weight: 800; color: #fff; margin-bottom: 0.6rem; font-size: 1.05rem;">Contato & Endereço</div>
+          <p>Rua Battista Malatesta, 110</p>
+          <p>Jardim Guarujá, São Paulo - SP</p>
+          <p>CEP: 05877-170</p>
+          <p style="margin-top: 0.6rem;">
+            <strong>WhatsApp / Telefone:</strong> 
+            <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." style="color: var(--whatsapp-green); font-weight: 700;" target="_blank" rel="noopener noreferrer">
+              (11) 93921-3171
+            </a>
+          </p>
+          <p style="margin-top: 0.25rem;">
+            <strong>Instagram:</strong> <a href="https://instagram.com/auto_mecanica_guaruja" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">@auto_mecanica_guaruja</a>
+          </p>
+          <p>
+            <strong>YouTube:</strong> <a href="https://youtube.com/@automecanicaguaruja" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">youtube.com/@automecanicaguaruja</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright-area">
+        <div>&copy; Auto Mecânica Guarujá - Todos os direitos reservados.</div>
+        <div class="demo-credit">Demonstração criada por Andrade Studio AI</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a href="https://wa.me/5511939213171?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar no WhatsApp com a Auto Mecânica Guarujá">
+    <div class="whatsapp-pulse"></div>
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.214 8.214 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.31z"/>
+    </svg>
+  </a>
+
+  <!-- SCRIPT DINÂMICO & INTERATIVIDADE -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const config = window.CONFIG_OFICINA || {};
+
+      // 1. Autoridade YouTube na Faixa de Confiança
+      const youtubeStripItem = document.getElementById('trust-item-youtube');
+      const youtubeVal = document.getElementById('trust-val-youtube');
+      if (config.numeroInscritosYoutube && config.numeroInscritosYoutube.trim() !== "") {
+        youtubeVal.textContent = config.numeroInscritosYoutube;
+        youtubeStripItem.style.display = 'flex';
+      }
+
+      // 2. Configuração dos Vídeos (Links e Títulos)
+      if (config.video1) {
+        const link1 = document.getElementById('video-link-1');
+        const title1 = document.getElementById('video-title-1');
+        const cat1 = document.getElementById('video-cat-1');
+        if (config.video1.url) link1.href = config.video1.url;
+        if (config.video1.titulo) title1.textContent = config.video1.titulo;
+        if (config.video1.categoria) cat1.textContent = config.video1.categoria;
+      }
+
+      if (config.video2) {
+        const link2 = document.getElementById('video-link-2');
+        const title2 = document.getElementById('video-title-2');
+        const cat2 = document.getElementById('video-cat-2');
+        if (config.video2.url) link2.href = config.video2.url;
+        if (config.video2.titulo) title2.textContent = config.video2.titulo;
+        if (config.video2.categoria) cat2.textContent = config.video2.categoria;
+      }
+
+      // 3. Ponto de Referência
+      const alertPontoRef = document.getElementById('alert-ponto-ref');
+      if (config.pontoReferencia && config.pontoReferencia.trim() !== "") {
+        alertPontoRef.textContent = "Dica para achar o nº 110: " + config.pontoReferencia;
+        alertPontoRef.style.display = 'block';
+      }
+
+      // 4. Horários de Atendimento (Oculta se vazio)
+      if (config.horarioSemana && config.horarioSemana.trim() !== "") {
+        document.getElementById('val-horario-semana').textContent = config.horarioSemana;
+      }
+
+      if (config.intervaloAlmoco && config.intervaloAlmoco.trim() !== "") {
+        document.getElementById('val-horario-almoco').textContent = config.intervaloAlmoco;
+        document.getElementById('row-horario-almoco').style.display = 'table-row';
+      }
+
+      if (config.horarioSabado && config.horarioSabado.trim() !== "") {
+        document.getElementById('val-horario-sabado').textContent = config.horarioSabado;
+        document.getElementById('row-horario-sabado').style.display = 'table-row';
+      }
+
+      // 5. Parcelamento no FAQ
+      if (config.condicoesParcelamento && config.condicoesParcelamento.trim() !== "") {
+        const faqText = document.getElementById('faq-pagamento-text');
+        faqText.textContent = "Sim! Aceitamos cartões de crédito, débito e Pix (" + config.condicoesParcelamento + ").";
+      }
+
+      // 6. Acordeão do FAQ
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function () {
+          const item = this.parentElement;
+          const isActive = item.classList.contains('active');
+          
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            otherItem.classList.remove('active');
+          });
+          
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
